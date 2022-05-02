@@ -1,0 +1,19 @@
+/* 
+#content-wrapper {
+  padding-top: 30px;
+  border-top: solid 1px #fff;
+}
+#main-content {
+  float: left;
+  width: 1500px;
+}
+#main-content img {
+  max-width: 100%;
+} */
+
+#main-content {
+  position: relative;
+}
+.carouselTicker {
+  /* position: absolute; */
+}

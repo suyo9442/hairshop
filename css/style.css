@@ -1,0 +1,625 @@
+/* style.css */
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* font-weigth
+300;400;700;800
+*/
+
+#wrap {width: 100%; 
+    /* background-color: #1A1A1A; */
+}
+#main_header {
+    width: 100%; height: 80px; 
+    background-color: #1A1A1A;
+    position: absolute;
+    z-index: 99;
+}
+#visual {
+    width: 100%; height: 100vh;
+    /* 임시 */
+    overflow-x: hidden;
+}
+#content1 {
+    width: 100%;
+    position: relative;
+    background-color: #1A1A1A;
+}
+#content2 {
+    width: 100%; 
+    margin-top: 100px;
+}
+#content3 {
+    width: 100%;
+    margin-top: 100px;
+    background: linear-gradient(to right, #fff 50%, #1A1A1A 50%);
+}
+#content4 {width: 100%; margin-top: 100px;}
+#content5 {width: 100%; background-color: #1A1A1A; color: #fff;}
+#content6 {width: 100%; background-color: #fff;}
+#main_footer {
+    width: 100%; 
+    background-color:  #1A1A1A;
+    color: #A7A7A7;
+    font-size: 16px;
+    margin-top: 100px;
+}
+
+
+/**** main_header ****/
+#main_header > .contianer {
+    width: 1400px; margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+/* main_logo */
+#main_header h1 > a{
+    display: inline-block;
+    margin: 20px 10px;
+}
+/* main_gnb */
+#gnb {
+    margin-top: 30px;
+    padding-right: 165px;
+    position: relative;
+}
+#gnb ul li {
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+}
+#gnb ul li a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+}
+#gnb > .book_now {
+    position: absolute;
+    top: -1px;
+    right: 15px;
+}
+#gnb > .book_now > a {
+    color: #fff;
+    font-size: 13px;
+    border: 2px solid #D1A068;
+    padding: 10px;
+}
+#gnb > .book_now > a:hover {
+    background-color: #D1A068;
+}
+
+
+/**** visual ****/
+
+/* sliders */
+#visual .sliders {
+    position: relative;
+}
+#visual .sliders > img {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    /* 첫이미지 다음에 깜빡 방지 */
+    display: none;
+}
+#visual .sliders > img:nth-child(1) {
+    display: block;
+}
+
+/* main_text */
+#visual .main_text {
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 400px);
+    top: calc(50% - 120px);
+}
+#visual .main_text > p {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+}
+.main_text > a {
+    display: inline-block;
+    width: 208px; height: 53px;
+    line-height: 55px;
+    font-size: 18px;
+    background-color: #D1A068;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/**** content1 ****/
+#content1 > .container {
+    width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#content1 > .container > article {
+    float: left;
+    width: 50%;
+}
+#content1 .left > h1 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 600;
+    padding: 70px 0;
+}
+#content1 .left > h1 > span {
+    color: #D1A068;
+}
+#content1  .left > .bottom_text {
+    margin-left: 220px;
+}
+#content1  .left > .bottom_text  > p {
+    width: 400px;
+    font-size: 20px;
+    color: #888888;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+#content1 .left > .bottom_text > a {
+    color: #D1A068;
+    font-size: 14px;
+    margin-left: 180px;
+}
+#content1 .left > .bottom_text > div.line {
+    width: 250px;
+    height: 2px;
+    background-color: #D1A068;
+    margin-top: 20px;
+}
+#content1 .right > img {
+    width: 100%;
+    height: 100%;
+}
+
+/**** content2 ****/
+#content2 > .container {
+    width: 1400px;
+    margin: 0 auto;
+}
+#content2 h1 {
+    font-size: 44px;
+    margin-bottom: 80px;
+}
+#content2 .top {
+    display: flex;
+    justify-content: space-between;
+}
+#content2 .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+#content2 article {
+    width: 31%;
+    background-color: #F8F9FB;
+    border: 1px solid #E2E2E2;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#content2 article > img {
+    margin-top: 80px;
+}
+#content2 article > h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+#content2 article > p {
+    text-align: start;
+    font-size: 16px;
+    margin: 40px 50px 80px 50px;
+}
+
+
+
+/**** content3 ****/
+#content3 > .container {
+    width: 1400px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    background-color: #1A1A1A;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+#content3 h1 {
+    font-size: 44px;
+    color: #fff;
+    margin-bottom: 80px;
+    padding-left: 50px;
+}
+
+
+/**** content4 ****/
+#content4 > .container {
+    width: 1400px; height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#content4 h1 {
+    font-size: 44px;
+    margin-bottom: 100px;
+}
+/* left, right 분할 */
+#content4 article {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+#content4 article.right {
+    margin-top: 300px;
+}
+/* title, checkbox 분할 */
+#content4 article > section > div {
+    display: inline-block;
+}
+/* title */
+#content4 article > section > div.title {
+    width: 200px;
+}
+#content4 article > section > div.title > h2 {
+    font-size: 22px;
+    margin-bottom: 50px;
+    text-align: start;
+}
+#content4 article > section > div.title > a {
+    width: 158px;
+    height: 40px;
+    font-size: 16px;
+    color: #D1A068;
+    padding: 10px;
+}
+#content4 article > section > div.title > a:hover {
+    border: 1px solid #D1A068;
+}
+/* checkbox */
+#content4 article div.checkbox {
+    display: inline-block;
+    width: 433px;
+    height: 597px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.185);
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+#content4 article div.checkbox {
+    text-align: start;
+}
+#content4 article div.checkbox ul {
+    padding: 70px;
+}
+#content4 article div.checkbox ul li {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 10px;
+    position: relative;
+    padding: 40px 0;
+}
+#content4 article div.checkbox ul li span {
+    font-size: 22px;
+    position: absolute;
+    left: 50px;
+    top: 35px;
+}
+#content4 article div.checkbox ul li input[type="checkbox"] {
+    display: none;
+}
+#content4 article div.checkbox ul li input[type="checkbox"] + label {
+    display: inline-block;
+    width: 17px; height: 17px;
+    border: 1px solid #D1A068;
+    cursor: pointer;
+}
+#content4 article div.checkbox ul li input[type="checkbox"]:checked + label {
+    background: url('../image/content3/check-mark.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/**** content5 *****/
+#content5 > .container {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 80px 0;
+    position: relative;
+}
+#content5 h1 {
+    font-size: 44px;
+    color: #fff;
+    margin-bottom: 80px;
+}
+/* slides */
+.slide_wrapper {
+    position: relative;
+    width: 1110px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slides {
+    position: absolute;
+    /* width: 2610px; */
+    transition: left 0.5s ease-out;
+}
+.slides li {
+    float: left;
+    margin-right: 30px;
+    position: relative;
+}
+.slides li:last-child {
+    margin-right: 0px;
+}
+.controls {
+    text-align: center;
+}
+.controls span {
+    color: rgba(255, 255, 255, 0.425);
+    font-family: 'Gothic A1', sans-serif;
+    padding: 0px 20px;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+}
+.controls span.prev {
+    left: 0;
+    cursor: pointer;
+}
+.controls span.next {
+    right: 0;
+    cursor: pointer;
+}
+.slides li > div.profile_box {
+    background-color:  #1A1A1A;
+    width: 250px; height: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0 0 40px;
+}
+.slides li > div.profile_box h2 {
+    color: #fff;
+    font-size: 20px;
+}
+.slides li > div.profile_box h3 {
+    color: #fff;
+    font-size: 16px;
+}
+.slides li > div.profile_box a {
+    display: block;
+    width: 165px;
+    height: 40px;
+    font-size: 16px;
+    color: #D1A068;
+    text-align: center;
+    position: absolute;
+    left: 30px;
+    line-height: 40px;
+    margin-top: 10px;
+}
+.slides li > div.profile_box > a:hover {
+    border: 1px solid #D1A068;
+}
+
+
+/**** content6 *****/
+#content6 > .container {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 80px 0;
+    position: relative;
+}
+#content6 h1 {
+    font-size: 44px;
+    color: #333;
+    margin-bottom: 80px;
+}
+/* slides */
+.slide_wrapper2 {
+    position: relative;
+    width: 1110px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slides2 {
+    position: absolute;
+    transition: left 0.5s ease-out;
+}
+.slides2 li {
+    float: left;
+}
+.slides2 li a div.review_box {
+    width: 1200px; height: 500px;
+    position: relative;
+}
+.slides2 li a div.review_box article {
+    position: absolute;
+    text-align: center;
+    width: 800px; height: 100%;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-55%);
+}
+.slides2 li a div.review_box article > h4 {
+    font-size: 22px;
+    padding: 50px 0;
+}
+.slides2 li a div.review_box article > p {
+    font-size: 16px;
+    margin-top: 70px;
+}
+.controls2 {
+    text-align: center;
+}
+.controls2 span {
+    color: rgba(0, 0, 0, 0.212);
+    font-family: 'Gothic A1', sans-serif;
+    padding: 0px 20px;
+    font-size: 80px;
+    position: absolute;
+    top: 40%;
+}
+.controls2 span.prev2 {
+    left: 0;
+    cursor: pointer;
+}
+.controls2 span.next2 {
+    right: 0;
+    cursor: pointer;
+}
+
+
+/**** content7 *****/
+#content7 > .container {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+#content7 h1 {
+    font-size: 44px;
+    margin-bottom: 80px;
+}
+#content7 ul {
+    display: flex;
+    justify-content: space-between;
+}
+#content7 ul li {
+    position: relative;
+}
+#content7 ul li div {
+    width: 100%; height: 200px;
+    background-color: rgba(0, 0, 0, 0.63);
+    position: absolute;
+    bottom: 0;
+}
+#content7 ul li div > h2 {
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 16px;
+    margin-bottom: 18px;
+    padding: 30px 0 0 30px;
+}
+#content7 ul li div > p {
+    color: #fff;
+    font-size: 20px;
+    padding: 0px 0 0 30px;
+}
+#content7 ul li span > a {
+    position: absolute;
+    bottom: 204px;
+    right: 0px;
+    font-size: 20px;
+    color: #D1A068;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+#content7 ul li span > a:hover {
+    border: 1px solid #D1A068;
+}
+
+/**** main_footer *****/
+#main_footer > .container {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 80px 0px 30px 0px;
+}
+#main_footer h1 {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* top */
+#main_footer section.top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+#main_footer section article {
+    width: 30%;
+}
+section.top h1 {
+    margin-bottom: 30px;
+}
+/* footer_text */
+.footer_text > p {
+    line-height: 50px;
+    margin-bottom: 12px;
+}
+/* comnany */
+.comnany > div {
+    display: inline-block;
+    width: 49%;
+}
+.comnany > div > ul {
+    display: inline-block;
+    text-align: start;
+}
+.comnany > div > ul > li {
+    margin-bottom: 20px;
+}
+.comnany ul > li > a {
+    color:#BFBFBF;
+    font-size: 16px;
+
+}
+/* project */
+.project > p {
+    margin-bottom: 70px;
+}
+.project > form {
+    display: flex;
+    justify-content: space-between;
+}
+#main_footer input[type="email"] {
+    background-color: rgba(51, 51, 51, 0);
+    border: none;
+    border-bottom: 1px solid #4d4d4d;
+    color: #BFBFBF;
+    width: 250px;
+}
+#main_footer input[type="submit"] {
+    background-color: rgba(204, 204, 204, 0);
+    border: none;
+    border: 1px solid #D1A068;
+    font-size: 14px;
+    color: #D1A068;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+
+
+/* bottom */
+section.bottom {
+    border-top: 1px solid #4d4d4d;
+    display: flex;
+    justify-content: space-between;
+}
+/* copy */
+section.bottom > .copy > p {
+    line-height: 100px;
+}
+/* sns */
+section.bottom > .sns > a > img {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: 35px;
+    opacity: 0.6;
+}
+
+
+/* media query */
+@media(max-width: 1400px) {
+    #main_header > .contianer {width: 100%;}
+    #content1 > .container {width: 100%;}
+    #content2 > .container {width: 100%;}
+    #content3 > .container {width: 100%;}
+    #content4 > .container {width: 100%;}
+    #content5 > .container {width: 100%;}
+    #content6 > .container {width: 100%;}
+    #content7 > .container  {width: 100%;}
+    #main_footer > .container {width: 100%;}
+
+}
